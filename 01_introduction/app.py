@@ -15,3 +15,17 @@ print('Hello Python')
 print("--------------------")
 print("    LEARN PYTHON    ")
 print("--------------------")
+
+print("Hi \"Python\"") # This will print: Hi "Python"
+print('Hi \'Python\'') # This will print: Hi 'Python'
+print('Hi "Python"') # This will print: Hi "Python"
+print("Hi 'Python'") # This will print: Hi 'Python'
+print("C:\\Users\\Username") # This will print: C:\Users\Username
+print("Message:\nHello, Python!") # This will print: Message:
+print("Message1\n") # This will print: Message1 followed by a new line
+print("Message2")
+
+print("Message1\n\n\n") # This will print: Message1 followed by three new lines
+print("Message2")
+print("Message1\n\n\nMessage2") # This will print: Message1 followed by three new lines and then Message2
+print("Message1\tMessage2") # This will print: Message1    Message2 (with a tab space in between)
