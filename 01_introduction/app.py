@@ -29,3 +29,4 @@ print("Message1\n\n\n") # This will print: Message1 followed by three new lines
 print("Message2")
 print("Message1\n\n\nMessage2") # This will print: Message1 followed by three new lines and then Message2
 print("Message1\tMessage2") # This will print: Message1    Message2 (with a tab space in between)
+print("Message1\rMessage2") # This will print: Message2 (Message1 will be overwritten by Message2 due to carriage return)
