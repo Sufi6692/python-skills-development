@@ -89,3 +89,43 @@ result = marks + 5
 
 print(student_name, "scored", result)
 
+
+## 1. Basic Input Example
+name = input("Enter your name: ")
+print("Hello,", name)
+
+# 2. Taking Number Input
+num = int(input("Enter a number: "))
+print("Square is:", num * num)
+
+
+#  #⚠️ Note: input() always returns a string, so we convert using int().
+
+# 3. Multiple Inputs (Space-separated)
+a, b = map(int, input("Enter two numbers: ").split())
+print("Sum:", a + b)
+
+#4. Simple Calculator
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+operation = input("Enter operation (+, -, *, /): ")
+
+if operation == "+":
+    print("Result:", num1 + num2)
+elif operation == "-":
+    print("Result:", num1 - num2)
+elif operation == "*":
+    print("Result:", num1 * num2)
+elif operation == "/":
+    if num2 != 0:
+        print("Result:", num1 / num2)
+    else:
+        print("Cannot divide by zero")
+else:
+    print("Invalid operation")
+
+#5. Taking List Input
+numbers = list(map(int, input("Enter numbers: ").split()))
+print("List:", numbers)
+print("Max:", max(numbers))
