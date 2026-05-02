@@ -9,3 +9,18 @@ g = False # g is a boolean
 h = None # h is a special value representing "no value"
 i = "" # i is a str blank string
 j = " " # j is a string containing an empty space
+print(type(a)) # <class 'int'>
+print(type(b)) # <class 'float'>
+print(type(c)) # <class 'str'>
+print(type(d)) # <class 'str'>
+print(type(e)) # <class 'str'>
+print(type(f)) # <class 'bool'>
+print(type(g)) # <class 'bool'>
+print(type(h)) # <class 'NoneType'>
+print(type(i)) # <class 'str'>
+print(type(j)) # <class 'str'>
+
+
+# Functions + Data Types
+
+
