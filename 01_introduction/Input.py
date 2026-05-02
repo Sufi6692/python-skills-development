@@ -1,3 +1,3 @@
 name = input( "Please enter your name: ")
 country = "Germany"
-print("Hello", name, "from", country)   git 
+print("Hello", name, "from", country)
