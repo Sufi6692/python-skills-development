@@ -22,5 +22,20 @@ print(type(j)) # <class 'str'>
 
 
 # Functions + Data Types
+text  = "Hello, World!"
+number = 42
+ 
+print(text)
+print(number)
+
+print(type(text)) # <class 'str'>
+print(type(number)) # <class 'int'>
+
+print(len(text)) # 13
+# print(len(number)) # TypeError: object of type 'int' has no len()
+
+
+print(text.upper()) # "HELLO, WORLD!"
+print(number.bit_length()) # 6 (number of bits needed to represent 42 in binary
 
 
