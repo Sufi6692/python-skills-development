@@ -1,7 +1,3 @@
+Text = "968-Maria,( D@t@ Engineer ) ;; 27Y  "
 
-    text = """
-    python is easy to learn.
-    python is powerful.
-    Many people love Python.
-    """
-print(text.count("python"))
+Text_Lower = Text.lower()
