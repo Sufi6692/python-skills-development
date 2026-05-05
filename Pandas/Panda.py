@@ -110,3 +110,25 @@ print(df.info())
 df.head(2) #first 2 rows
 df.tail(2) #last 2 rows
 
+# loc and iloc
+print("Using loc:")
+print(df.loc[0]) #first row
+print("Using iloc:")
+print(df.iloc[0]) #first row
+print(df.iloc[1:3,:2]) #rows 1 and 2, columns 0 and 1
+print("Using loc with column names:")
+print(df.loc[1:3, "Name":"Age"]) #rows 1 to 3, columns "Name" to "Age"
+print("Using loc with specific columns:")
+print(df.loc[1:3, ["Name", "Age"]]) #rows 1 to 3, specific columns "Name" and "Age"
+
+df[["Age", "City"]] #selecting specific columns
+print("Selecting specific columns:")
+print(df[["Age", "City"]])
+print("Conditional Selection:") 
+print(df[df["Age"] > 30]) #rows where age is greater than 30
+print("Multiple Conditions:")
+print(df[(df["Age"] > 30) & (df["Department"] == "IT")]) #rows where age is greater than 30 and department is IT
+# drop
+print("Dropping a column:")
+print(df.drop("Age", axis =1 )) #drop the "Age" column
+print("Dropping a row:")
