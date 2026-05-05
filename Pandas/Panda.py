@@ -1,4 +1,5 @@
 import pandas as pd 
+import numpy as np
 s = pd.Series([1, 2, 3, 4, 5])
 print("Series:")
 print(s)
@@ -79,3 +80,33 @@ print([(s2 < 0.5) | (s2 > 1.5)])
 # Not operator
 print("Fruits with protein content not greater than 1 gram:")
 print(~(s2 > 1))
+# Modyfing the series
+s2["Mango"] = 2.8
+print("Updated Series:")
+print(s2)
+
+ser = pd.Series(['a',np.nan, 1,np.nan, 2])
+print("Series with NaN values:")
+print(ser)
+print("Checking for NaN values:")
+print(ser.isnull())
+print("Checking for non-NaN values:")
+print(ser.notnull())
+print(s.notnull().sum()) #count of non-NaN values
+
+#DataFrame :
+data = {
+    "Name" : ["Alice", "Bob", "Charlie", "David", "Eve"],
+    "Age" : [25, 30, 35, 40, 45],
+    "salary" : [50000, 60000, 70000, 80000, 90000],
+    "Department" : ["HR", "Finance", "IT", "Marketing", "Sales"],
+    "City" : ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix"]
+}
+df = pd.DataFrame(data)
+print("DataFrame:")
+print(df)
+print("DataFrame Info:")
+print(df.info())
+df.head(2) #first 2 rows
+df.tail(2) #last 2 rows
+
