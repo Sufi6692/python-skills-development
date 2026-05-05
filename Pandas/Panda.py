@@ -66,3 +66,16 @@ print("Fruit Protein Dictionary:")
 print(fruit_protein)
 s2 = pd.Series(fruit_protein, name="Protein")
 print(s2)
+
+# Conditional Selection
+print("Fruits with protein content greater than 1 gram:")
+print(s2[s2 > 1])
+# Logical Operators
+print("Fruits with protein content between 0.5 and 2 grams:")
+print(s2[(s2 >0.5) & (s2 < 2)])
+# or operator
+print("Fruits with protein content less than 0.5 or greater than 1.5 grams:")
+print([(s2 < 0.5) | (s2 > 1.5)])
+# Not operator
+print("Fruits with protein content not greater than 1 gram:")
+print(~(s2 > 1))
