@@ -132,3 +132,5 @@ print(df[(df["Age"] > 30) & (df["Department"] == "IT")]) #rows where age is grea
 print("Dropping a column:")
 print(df.drop("Age", axis =1 )) #drop the "Age" column
 
+# checking the issue 
+
