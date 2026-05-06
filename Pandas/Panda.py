@@ -132,22 +132,3 @@ print(df[(df["Age"] > 30) & (df["Department"] == "IT")]) #rows where age is grea
 print("Dropping a column:")
 print(df.drop("Age", axis =1 )) #drop the "Age" column
 
-df = df.copy()
-
-df.loc[:, "Promoted Salary"] = df["Promoted Salary"].apply(
-    lambda x: x/10 if pd.notnull(x) and x > 650000 else x
-)
-
-df.loc[:, "Age"] = df["Age"].apply(lambda x: x * 2 if pd.notnull(x) else x)
-df.loc[:, "Age"] = df["Age"].apply(lambda x: x / 2 if pd.notnull(x) else x)
-
-df["name"] = "alice_fernandes"
-df[["first_name", "last_name"]] = df["name"].str.split("_", expand=True)
-
-df["Age"] = df["Age"].ffill()
-df["Age"] = df["Age"].bfill()
-
-ser = pd.Series(['a', np.nan, 1, np.nan, 2])
-ser.notnull().sum()
-
-df = df.drop_duplicates().reset_index(drop=True)
