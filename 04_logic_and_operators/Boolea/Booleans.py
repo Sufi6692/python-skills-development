@@ -1,0 +1,11 @@
+# Booleans
+print(True)
+print(False)
+print(type(True))
+print(type(False))
+print(bool(1234))
+print(bool("Hi"))
+print(bool())
+print(bool(0))
+print(bool(""))
+print(bool(None))
