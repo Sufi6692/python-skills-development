@@ -41,8 +41,42 @@ print("Hello".startswith("o"))
 
 
 
+# Comparison Operators
+
+print(10 == 10 )
+print(10 != 10)
+print(7 > 3)
+print(7 >= 3)
+print(3 < 7)
+print(7 <= 7)
 
 
+# String Can be compared too!
+# You can compare strings too alphabetically, not just numbers
+
+print("a" < "b")
+print("a" ==  "b")
+
+
+# Python is case-sensitive
+# So "a" and "A" are treated as different values
+print("a" ==  "A")
+
+
+#Chained Comparison
+# It evaluates if from left to right, checking each condition one by one
+
+print(1 < 4 < 6) # True
+print(5 < 4 < 6) # False
+
+
+
+#Chained Comparison
+# Work like SQL's BETWEEN They check if a value is between two bounds
+
+# Is age between 18 and 30 ?
+age = 18
+print(18 <= age <= 30)
 
 
 
